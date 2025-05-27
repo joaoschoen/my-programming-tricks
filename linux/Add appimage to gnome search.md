@@ -46,3 +46,19 @@ Categories=Utility; #Game, Utility or Development, used by gnome for sorting
 update-desktop-database ./
 ```
 - Now the appimage will show up when you hit __Super/Windows__
+
+- (Optional) Write an update script so you don't have to remember the command
+```sh 
+vim update.sh
+```
+  - Content of the script:
+```sh
+#!/bin/bash
+update-desktop-database ./
+```
+- Add execution permission to the script
+
+```sh
+#!/bin/bash
+chmod +x update.sh
+```
